@@ -558,7 +558,7 @@ if CheckPlace() then
 	local GameWave = LocalPlayer.PlayerGui:WaitForChild("ReactGameTopGameDisplay"):WaitForChild("Frame"):WaitForChild("wave"):WaitForChild("container"):WaitForChild("value") -- Current wave you are on
     local RSTimer = ReplicatedStorage:WaitForChild("State"):WaitForChild("Timer"):WaitForChild("Time") -- Current game's timer
     local RSMode = ReplicatedStorage:WaitForChild("State"):WaitForChild("Mode") -- Main Modes
-    local RSDifficulty = ReplicatedStorage:WaitForChild("State"):WaitForChild("Difficulty") -- Survival's gamemodes
+    local RSDifficulty = ReplicatedStorage:WaitForChild("State"):WaitForChild("Dif`ficulty") -- Survival's gamemodes
     local RSMap = ReplicatedStorage:WaitForChild("State"):WaitForChild("Map") --map's Name
     local RSHealthCurrent = ReplicatedStorage:WaitForChild("State"):WaitForChild("Health"):WaitForChild("Current") -- your current base hp
     local RSHealthMax = ReplicatedStorage:WaitForChild("State"):WaitForChild("Health"):WaitForChild("Max") -- your max hp
@@ -1418,8 +1418,6 @@ task.spawn(function()
 					Strat[i].ListNum += 1
 					continue
 				end
-				Functions[i](Strat,Strat[i].Lists[Strat[i].ListNum])
-				Strat[i].ListNum += 1
 				task.wait()
 			end
 		end)
